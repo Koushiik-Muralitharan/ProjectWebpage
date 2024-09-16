@@ -1,0 +1,172 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+}
+
+nav{
+    display: flex;
+    background-color: grey;
+    justify-content: space-between;
+    padding: 0.5% 2%;
+    font-size: large;
+    border-radius: 10px;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10%;
+    justify-content: flex-end;
+    font-weight: 800;
+}
+
+body{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "header header header"
+                         "main main main"
+                         "footer footer footer";
+    gap: 10px;
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(220, 224, 224);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+footer{
+    grid-area: footer;
+    background-color: grey;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.logo-container{
+    width:200px;
+    height: 50px;
+    
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.card-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.card{
+    width: 200px;
+    height: 320px;
+    background-color: pink;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 3px 3px 5px black;
+}
+.aboutus{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.about-text-content{
+    width: 600px;
+}
+.aboutus-img-container{
+    width: 500px;
+    height: 200px;
+}
+.aboutus-img{
+    width: 100%;
+    height:100% ;
+    border-radius: 20px 0px 20px 0px;
+}
+
+.aboutus-img:hover{
+    transform: scale(1.2);
+}
+.card-img:hover{
+    transform: scale(1.2);
+}
+.img-container{
+    width: 100%;
+    padding: 6px 15px;
+}
+
+li:hover{
+    color: red;
+    cursor: pointer;
+    
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(252, 3, 44);
+}
+
+.card-img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px black;
+}
+.description{
+    padding: 0px 10px;
+}
+.text-content-container{
+    overflow: auto;
+    height: 90px;
+}
+
+.text-content-container::-webkit-scrollbar {
+    display: none;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+button{
+    border: none;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px black;
+}
+
+.wishlist{
+    background-color: rgb(255, 155, 171) ;
+}
+
+.add-to-cart{
+    background-color: rgb(255, 155, 171) ;
+}
